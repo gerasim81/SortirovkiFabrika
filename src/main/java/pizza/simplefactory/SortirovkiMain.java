@@ -10,7 +10,7 @@ public class SortirovkiMain {
 		FillArray array = new FillArray();
 
 		final Random random = new Random();
-		int razmer = random.nextInt(100);//izmenyaem razmer massiva
+		int razmer = random.nextInt(1000);//izmenyaem razmer massiva
 
 		int [] array1 = new int[razmer];
 
@@ -19,7 +19,7 @@ public class SortirovkiMain {
 		System.out.println("Исходный массив: ");
 		array.arrayShow(array1);
 
-		Sortirovka sortirovka = sort1.makeSort("sort1Type");
+		Sortirovka sortirovka = sort1.makeSort("sort1Type");// sort1Type - Bubble,   sort2Type  - Brush.  
 		sortirovka.sortirovka(array1);
 
 		array.arrayShow(array1);
@@ -31,7 +31,7 @@ public class SortirovkiMain {
 		System.out.println("Исходный массив: ");
 		array.arrayShow(array1);
 
-		sortirovka = sort1.makeSort("sort2Type");
+		sortirovka = sort1.makeSort("sort2Type");// sort1Type - Bubble,   sort2Type  - Brush.
 		sortirovka.sortirovka(array1);
 
 		array.arrayShow(array1);
@@ -43,7 +43,7 @@ public class SortirovkiMain {
 		System.out.println("Исходный массив: ");
 		array.arrayShow(array1);
 
-		sortirovka = sort2.makeSort("sort2Type");
+		sortirovka = sort2.makeSort("sort1Type");// sort1Type - Shaker,   sort2Type  - EvenOdd.
 		sortirovka.sortirovka(array1);
 
 		array.arrayShow(array1);
@@ -55,7 +55,7 @@ public class SortirovkiMain {
 		System.out.println("Исходный массив: ");
 		array.arrayShow(array1);
 
-		sortirovka = sort2.makeSort("sort1Type");
+		sortirovka = sort2.makeSort("sort2Type");// sort1Type - Shaker,   sort2Type  - EvenOdd.
 		sortirovka.sortirovka(array1);
 
 		array.arrayShow(array1);		
