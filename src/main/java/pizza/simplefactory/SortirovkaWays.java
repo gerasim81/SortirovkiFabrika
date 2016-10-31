@@ -1,7 +1,7 @@
 package pizza.simplefactory;
 
 public abstract class SortirovkaWays {
-	public Sortirovka makeSort(String type){
+	public Sortirovka prepareSort(String type){
 		Sortirovka sort;
 		
 		sort = createSortirovka(type);
